@@ -1,0 +1,67 @@
+That's TestoReader Seiral:/root/factory_test/report/TESTOC3202007000034_20200722_083222_fail.txt production test report!
+if you have any questions about this test reports,Please conntact:www.seeedstudio.com
+Software System:debian 8.4
+Hardware test:
+************************************************************************
+----------------------------Status LED test---------------------------
+
+Status LED test----->[pass]
+
+
+----------------------------Battery test---------------------------
+
+PMU return value is[expect: 0x08 or 0x48]: 8
+
+Battery test----->[pass]
+
+
+------------------------------ GPIO test------------------------------
+
+gpio test ------>[pass]
+
+
+----------------------------analog pins test---------------------------
+
+1.743750 (AIN0) is in of range: 1.450000 ~ 1.850000.
+
+1.641797 (AIN4) is in of range: 1.540000 ~ 1.780000.
+
+1.638281 (AIN5) is in of range: 1.540000 ~ 1.780000.
+
+analog pins test   ------>[pass]
+
+
+----------------------------RTC test---------------------------
+
+hwclock read RTC1
+\ Wed 22 Jul 2020 08:32:31 AM UTC  -0.716150 seconds
+
+
+RTC test----->[pass]
+
+
+----------------------------RGB LED test---------------------------
+
+RGB LED test----->[pass]
+
+
+----------------------------Relay test---------------------------
+
+Relay test----->[pass]
+
+
+------------------------------eeprom test-------------------------------
+
+write board serial:  TGB107000034 ------>[PASS]
+
+write board version: TGB1 ------>[PASS]
+
+00000000  3f 55 33 3f 30 34 36 30  32 38 30 33 54 47 42 31  |?U3?04602803TGB1|
+00000010  54 47 42 31 30 37 30 30  30 30 33 34 31 35 39 35  |TGB1070000341595|
+00000020  34 30 36 37 35 37 00 00  00 00 00 00 00 00 00 00  |406757..........|
+00000030  00 00 00 00 00 00 00 00  00 00 00 00 ff ff ff ff  |................|
+00000040  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff 32 30  |..............20|
+00000050  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  |................|
+00000060  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  |................|
+00000070  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  |................|
+00000080

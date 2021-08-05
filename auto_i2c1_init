@@ -1,0 +1,7 @@
+config-pin P9_17 i2c
+config-pin P9_18 i2c
+sleep 1
+echo rx8025 0x32 > /sys/devices/platform/ocp/4802a000.i2c/i2c-1/new_device
+sleep 0.5
+hwclock -w
+sleep 0.5

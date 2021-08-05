@@ -1,0 +1,54 @@
+That's TestoReader Seiral:/root/factory_test/report/TESTOC3202007000034_20200722_081441_fail.txt production test report!
+if you have any questions about this test reports,Please conntact:www.seeedstudio.com
+Software System:debian 8.4
+Hardware test:
+************************************************************************
+----------------------------Status LED test---------------------------
+
+Status LED test----->[pass]
+
+
+----------------------------Battery test---------------------------
+
+PMU return value is[expect: 0x08 or 0x48]: 16
+
+Battery test----->[pass]
+
+
+------------------------------ GPIO test------------------------------
+
+gpio test ------>[pass]
+
+
+----------------------------analog pins test---------------------------
+
+1.741992 (AIN0) is in of range: 1.450000 ~ 1.850000.
+
+1.643555 (AIN4) is in of range: 1.540000 ~ 1.780000.
+
+1.636523 (AIN5) is in of range: 1.540000 ~ 1.780000.
+
+analog pins test   ------>[pass]
+
+
+----------------------------RTC test---------------------------
+
+hwclock read RTC1
+\ Wed 22 Jul 2020 08:14:49 AM UTC  -0.728335 seconds
+
+
+RTC test----->[pass]
+
+
+----------------------------RGB LED test---------------------------
+
+RGB LED test----->[pass]
+
+
+----------------------------Relay test---------------------------
+
+Relay test----->[pass]
+
+
+------------------------------eeprom test-------------------------------
+

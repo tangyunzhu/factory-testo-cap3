@@ -1,0 +1,10 @@
+That's TestoReader Seiral:/root/factory_test/report/TGB100000027_fail.txt production test report!
+if you have any questions about this test reports,Please conntact:www.seeedstudio.com
+Software System:debian 8.4
+Hardware test:
+************************************************************************
+----------------------------Status LED test---------------------------
+
+Status LED test----->[fail]
+
+

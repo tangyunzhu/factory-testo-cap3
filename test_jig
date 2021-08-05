@@ -1,0 +1,41 @@
+echo "the object is: " $1
+echo "the action is: " $2
+if [ "$1" == "RGB" ]; then
+	if [ $2 == "green" ]; then
+		gpio set 3
+	fi
+	if [ $2 == "blue" ]; then
+		gpio set 30
+	fi
+	if [ $2 == "red" ]; then
+		gpio set 2
+	fi
+	if [ $2 == "white" ]; then
+		gpio set 2
+		gpio set 3
+		gpio set 30
+	fi
+	if [ $2 == "off" ]; then
+		gpio clear 2
+		gpio clear 3
+		gpio clear 30
+	fi 
+fi
+if [ "$1" == "Relay" ]; then
+	if [ $2 == "on" ]; then
+		gpio set 27
+	fi
+	if [ $2 == "off" ]; then
+		gpio clear 27
+	fi	
+fi
+
+if [ "$1" == "status" ]; then
+        if [ $2 == "on" ]; then
+                gpio set 22
+        fi
+        if [ $2 == "off" ]; then
+                gpio clear 22
+        fi
+fi
+
