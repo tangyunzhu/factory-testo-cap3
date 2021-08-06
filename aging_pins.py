@@ -25,7 +25,7 @@ def check_status_led():
             if '0' in out:
                 return 'ok'
             looptime = looptime + 1
-            if(looptime == 30):
+            if(looptime == 5):
                 return 'error'
     except:
         pass
@@ -37,14 +37,12 @@ def check_relay():
     try:
         os.system('gpio set 27')
         while True:
-            out = os.popen('gpio input 40').read()
-            time.sleep(0.2)
-            if '0' in out:
-                os.system("gpio clear 27")
-                return 'ok'
+            os.system('gpio set 27')
+	    time.sleep(1)
+	    os.system('gpio clear 27')
+	    time.sleep(1)
             looptime = looptime + 1
-            if(looptime == 40):
-                os.system("gpio clear 27")
+            if(looptime == 5):
                 return 'error'
     except:
         pass
@@ -73,7 +71,7 @@ def check_rgb():
             if '0' in out:
                 return 'ok'
             looptime = looptime + 1
-            if(looptime == 10):
+            if(looptime == 5):
                 return 'error'
     except:
         pass
