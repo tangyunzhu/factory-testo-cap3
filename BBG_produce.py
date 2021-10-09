@@ -245,7 +245,9 @@ if __name__ == '__main__':
             print "uploading log file"
             f = uploader.uploadfile(UploadFileName[26:],UploadFileName)
             if f == True:
-                break   
+                break
+            if n==90:
+                report_error()
         os.system("gpio clear 3")     
         os.system("poweroff")
 
